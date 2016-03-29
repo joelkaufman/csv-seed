@@ -1,4 +1,5 @@
 {
     "name": "joelkaufman/csv-seed",
+    "minimum-stability": "stable",
     "require": {}
 }
