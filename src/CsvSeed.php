@@ -1,5 +1,7 @@
 <?php
 
+namespace CsvSeed;
+
 class CsvSeed
 {
     private $file;
