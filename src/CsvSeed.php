@@ -1,6 +1,6 @@
 <?php
 
-namespace CsvSeed;
+namespace joelkaufman;
 
 class CsvSeed
 {
