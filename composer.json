@@ -1,5 +1,10 @@
 {
     "name": "joelkaufman/csv-seed",
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "joelkaufman\\": "./"
+        }
+    }
 }
