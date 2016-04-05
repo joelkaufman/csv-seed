@@ -14,9 +14,9 @@ class CsvSeed
         $results = [];
 
         $count = -2;
-        if (($handle = fopen($this->path, "r")) !== FALSE) {
+        if (($handle = fopen($this->path, "r")) !== false) {
 
-            while (($row = fgetcsv($handle, 99999, ",")) !== FALSE) {
+            while (($row = fgetcsv($handle, 99999, ",")) !== false) {
                 $count ++;
 
                 if($count == -1){
@@ -28,6 +28,9 @@ class CsvSeed
                 $data= [];
 
                 for($i = 0; $i < sizeof($row); $i ++){
+                    if($columns[$i] == false){
+                        continue;
+                    }
                     $data[$columns[$i]] = $row[$i];
                 }
 
